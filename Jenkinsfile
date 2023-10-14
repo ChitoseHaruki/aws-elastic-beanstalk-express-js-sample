@@ -1,6 +1,6 @@
 pipeline {
     agent {
-       dockerContainer {
+       docker {
             image 'node:16-alpine'  
             args '-p 3000:3000' 
         }
